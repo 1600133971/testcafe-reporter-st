@@ -13,13 +13,9 @@ createTestCafe('localhost')
       .browsers('chrome:headless')
       .reporter('st')
       .concurrency(3)
-      .screenshots('D:/testCafeDemo')
+      .screenshots('./')
       .run();
   })
   .then(failedCount => {
     testcafe.close();
   });
-
-var rl = require('readline').createInterface({ input: process.stdin, output: process.stdout });
-rl.question("", function (answer) { rl.close(); });
-rl.on("close", function () { process.exit(0); });
