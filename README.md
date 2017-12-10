@@ -1,4 +1,3 @@
-@ -1 +1,35 @@
 # testcafe-reporter-st
 [![Build Status](https://travis-ci.org/Soluto/testcafe-reporter-st.svg)](https://travis-ci.org/Soluto/testcafe-reporter-st) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
