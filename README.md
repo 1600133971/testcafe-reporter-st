@@ -1,14 +1,6 @@
 # testcafe-reporter-st
-[![Build Status](https://travis-ci.org/Soluto/testcafe-reporter-st.svg)](https://travis-ci.org/Soluto/testcafe-reporter-st) 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 This is the **st** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
-
-## Install
-
-```
-npm install testcafe-reporter-st
-```
 
 ## Usage
 
