@@ -96,7 +96,11 @@ test('My first test 10', async t => {
 test('My first test screenshot', async t => {
   await t.takeScreenshot();
 });
-
+/*
+test('My first test 100s', async t => {
+  await t.wait(100000);
+});
+*/
 test.skip('My first skip', async t => {
   await t
     .typeText('#developer-name', 'John Smith')
@@ -114,3 +118,4 @@ test('My first error', async t => {
     // Use the assertion to check if the actual header text is equal to the expected one
     .expect(Selector('#article-header').innerText).eql('Thank you, John Smith2!');
 });
+

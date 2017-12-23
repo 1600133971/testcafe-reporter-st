@@ -93,7 +93,6 @@ test('My second test 10', async t => {
     .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
 });
 
-
 test.skip('My second skip', async t => {
   await t
     .typeText('#developer-name', 'John Smith')

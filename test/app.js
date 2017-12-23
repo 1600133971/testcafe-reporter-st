@@ -10,6 +10,7 @@ createTestCafe('localhost')
     return runner
       .src('fixture1.js')
       .src('fixture2.js')
+      .src('fixture3.js')
       .browsers('chrome:headless')
       .reporter('st')
       .concurrency(3)
