@@ -96,11 +96,11 @@ test('My first test 10', async t => {
 test('My first test screenshot', async t => {
   await t.takeScreenshot();
 });
-/*
-test('My first test 100s', async t => {
-  await t.wait(100000);
+
+test('My first test 1s', async t => {
+  await t.wait(1000);
 });
-*/
+
 test.skip('My first skip', async t => {
   await t
     .typeText('#developer-name', 'John Smith')
@@ -119,3 +119,7 @@ test('My first error', async t => {
     .expect(Selector('#article-header').innerText).eql('Thank you, John Smith2!');
 });
 
+test('My first warning', async t => {
+  await t
+    .maximizeWindow();
+});
