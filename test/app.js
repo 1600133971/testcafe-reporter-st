@@ -1,5 +1,6 @@
 'use strict';
-const createTestCafe = require('testcafe');
+
+let createTestCafe = require('testcafe');
 let testcafe = null;
 
 createTestCafe('localhost')
@@ -8,9 +9,11 @@ createTestCafe('localhost')
     const runner = testcafe.createRunner();
 
     return runner
+      .startApp('node server.js 8085', 4000)
       .src('fixture1.js')
       .src('fixture2.js')
       .src('fixture3.js')
+      .src('fixture4.js')
       .browsers('chrome:headless')
       .reporter('st')
       .concurrency(3)
