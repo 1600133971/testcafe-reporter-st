@@ -6,13 +6,11 @@ let testcafe = null;
 let runner = null;
 
 let listFailedTestName = function(path) {
-  let last = fs.readFileSync(path).toString().split('}{').pop()
+  let last = JSON.parse('[' + fs.readFileSync(path).toString().replace(/}{/g, '},{') + ']').pop();
   let list = new Array()
-  JSON.parse(last.charAt(0) == '{' ? last : '{' + last).fixtures.forEach(function(fixture, index) {
+  last.fixtures.forEach(function(fixture, index) {
     fixture.tests.forEach(function(test, index) {
-      if (test.errs.length > 0) {
-        list.push({fixture: fixture.name, test: test.name});
-      }
+      if (test.errs.length > 0) list.push({fixture: fixture.name, test: test.name});
     });
   });
   return list;
