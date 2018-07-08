@@ -1,5 +1,24 @@
 const Selector = require('testcafe').Selector;
-const config = require('./config.json');
+const config = [
+  {
+    "fixture": "#1",
+    "id": 1,
+    "title": "home",
+    "url": "http://localhost:8085/testcafe/example/index.html"
+  },
+  {
+    "fixture": "#2",
+    "id": 2,
+    "title": "register",
+    "url": "http://localhost:8085/testcafe/example/index.html"
+  },
+  {
+    "fixture": "#3",
+    "id": 3,
+    "title": "login",
+    "url": "http://localhost:8085/testcafe/example/index.html"
+  }
+];
 
 config.forEach((el) => {
   fixture(el.fixture)
@@ -94,4 +113,4 @@ config.forEach((el) => {
       // Use the assertion to check if the actual header text is equal to the expected one
       .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
   });
-})
+});
