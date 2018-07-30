@@ -24,12 +24,12 @@ createTestCafe('localhost')
     let htmlStream = fs.createWriteStream('report_' + Date.now() + '.html');
     return runner
       .startApp('node server.js 8085', 4000)
-      /*.src('fixture1.js')
+      .src('fixture1.js')
       .src('fixture2.js')
       .src('fixture3.js')
       .src('fixture4.js')
       .src('fixture5.js')
-      .src('fixture6.js')*/
+      .src('fixture6.js')
       .src('fixture7.js')
       .browsers('chrome:headless')
       .reporter('st')
