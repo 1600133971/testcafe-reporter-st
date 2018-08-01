@@ -1,4 +1,4 @@
-import { Selector, t } from 'testcafe';
+import { Selector, t, ClientFunction } from 'testcafe';
 
 export let f = {
   getSelector: function(selector) {
@@ -7,32 +7,32 @@ export let f = {
 
   inquiryForAppear: async function(selector, ms, count = 10) {
     let sl = f.getSelector(selector);
-    let i = 0;
-    while(!(await sl.exists) && i < count) {
+    while((sl != undefined) && !(await sl.exists)) {
       await t.wait(ms);
-      i++;
     }
   },
   
   inquiryForDisappear: async function(selector, ms, count = 10) {
     let sl = f.getSelector(selector);
-    let i = 0;
-    while((await sl.exists) && i < count) {
+    while((sl != undefined) && (await sl.exists)) {
       await t.wait(ms);
-      i++;
     }
   },
 
   // wait for a selector to appear
   waitForAppear: async function(selector, ms) {
     let sl = f.getSelector(selector);
-    await t.expect(sl.with({visibilityCheck: true}).nth(0).exists).ok({timeout: ms});
+    if (sl != undefined) {
+      await t.expect(sl.with({visibilityCheck: true}).nth(0).exists).ok({timeout: ms});
+    }
   },
 
   // wait for a selector to disappear
   waitForDisappear: async function(selector, ms) {
     let sl = f.getSelector(selector);
-    await t.expect(sl.with({visibilityCheck: true}).nth(0).exists).notOk({timeout: ms});
+    if (sl != undefined) {
+      await t.expect(sl.with({visibilityCheck: true}).nth(0).exists).notOk({timeout: ms});
+    }
   },
 
   selectOption: async function(selector, text) {
@@ -88,4 +88,27 @@ export let f = {
       .click(sl)
       .click(sl.find("option").withExactText(exactText).nth(0))
   },
+
+  // you need to import {ClientFunction} from "testcafe";
+  // usage: const value = await getLocalStorageValueByKey("mykey");
+  getLocalStorageValueByKey: ClientFunction((key) => {
+    return new Promise( (resolve) => {
+        const result = localStorage.getItem(key);
+        resolve(result);
+    });
+  }),
+
+  // you need to import {ClientFunction} from "testcafe";
+  // usage: await setLocalStorage("mykey", "myValue");
+  setLocalStorage: ClientFunction((key, value) => {
+    return new Promise( (resolve, reject) => {
+        try {
+            localStorage.setItem(key, value);
+            resolve();
+        } catch (error) {
+            reject(error);
+        }
+    });
+  }),
+
 };
