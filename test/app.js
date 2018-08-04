@@ -42,7 +42,7 @@ createTestCafe('localhost')
         if (failedCount > 0) {
           return runner
             .concurrency(1)
-            .filter((testName, fixtureName, fixturePath) => {return checkFailedTest(testName, fixtureName, jsonFilePath);})
+            .filter((testName, fixtureName) => {return checkFailedTest(testName, fixtureName, jsonFilePath);})
             .run();
         }
       })
