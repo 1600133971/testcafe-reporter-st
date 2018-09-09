@@ -1,69 +1,24 @@
 {
-  "_from": "testcafe-reporter-st",
-  "_id": "testcafe-reporter-st@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha1-fBa8wyjrBHIFzX0YwTgJjIY6vOY=",
-  "_location": "/testcafe-reporter-st",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "testcafe-reporter-st",
-    "name": "testcafe-reporter-st",
-    "escapedName": "testcafe-reporter-st",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "testcafe-reporter-st",
+  "version": "1.0.0",
+  "description": "TestCafe st reporter plugin.",
+  "main": "lib/index",
+  "scripts": {
+    "test": "node ./test/app.js"
   },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "http://registry.npm.taobao.org/testcafe-reporter-st/download/testcafe-reporter-st-1.0.9.tgz",
-  "_shasum": "7c16bcc328eb047205cd7d18c138098c863abce6",
-  "_spec": "testcafe-reporter-st",
-  "_where": "C:\\Users\\Administrator",
-  "author": {
-    "name": "Soluto",
-    "url": "https://github.com/soluto"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1600133971/testcafe-reporter-st.git"
   },
-  "bugs": {
-    "url": "https://github.com/soluto/testcafe-reporter-st/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "st TestCafe reporter plugin.",
-  "devDependencies": {
-    "babel-eslint": "^4.0.10",
-    "callsite-record": "^3.2.0",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "gulp-eslint": "^1.1.1",
-    "gulp-mocha": "^2.2.0",
-    "normalize-newline": "^1.0.2",
-    "publish-please": "^2.1.4",
-    "read-file-relative": "^1.2.0",
-    "testcafe": "^0.2.0-alpha"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://github.com/soluto/testcafe-reporter-st#readme",
   "keywords": [
     "testcafe",
     "reporter",
     "plugin"
   ],
+  "author": "1600133971",
   "license": "MIT",
-  "main": "lib/index",
-  "name": "testcafe-reporter-st",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soluto/testcafe-reporter-st.git"
+  "bugs": {
+    "url": "https://github.com/1600133971/testcafe-reporter-st/issues"
   },
-  "scripts": {
-    "publish-please": "publish-please",
-    "test": "gulp test"
-  },
-  "version": "1.0.0"
+  "homepage": "https://github.com/1600133971/testcafe-reporter-st#readme"
 }
