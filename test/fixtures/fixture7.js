@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe';
-import { f } from './common';
+import { f } from '../common';
 
 fixture`Getting seventh`
   .page`http://localhost:8085/testcafe/example/index.html`;

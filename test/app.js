@@ -20,35 +20,23 @@ createTestCafe('localhost')
     testcafe = tc;
     let runner = testcafe.createRunner();
     let jsonFilePath = 'report_' + Date.now() + '.json';
-    let jsonStream = fs.createWriteStream(jsonFilePath);
-    let htmlStream = fs.createWriteStream('report_' + Date.now() + '.html');
+    let htmlFilePath = 'report_' + Date.now() + '.html';
     return runner
       .startApp('node server.js 8085', 4000)
-      .src('fixture1.js')
-      .src('fixture2.js')
-      .src('fixture3.js')
-      .src('fixture4.js')
-      .src('fixture5.js')
-      .src('fixture6.js')
-      .src('fixture7.js')
+      .src(['fixtures/*.js'])
       .browsers('chrome:headless')
-      .reporter('st')
-      .reporter('json', jsonStream)
-      .reporter('st-html', htmlStream)
+      .reporter(['st', {name: 'json', output: jsonFilePath}, {name: 'st-html', output: htmlFilePath}])
       .concurrency(4)
       .screenshots('./')
       .run()
       .then(failedCount => {
         if (failedCount > 0) {
           return runner
+            .reporter(['st'])
             .concurrency(1)
             .filter((testName, fixtureName) => {return checkFailedTest(testName, fixtureName, jsonFilePath);})
             .run();
         }
-      })
-      .then(failedCount => {
-        jsonStream.end();
-        htmlStream.end();
       });
   })
   .then(failedCount => {

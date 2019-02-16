@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-st",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TestCafe st reporter plugin.",
   "main": "lib/index",
   "scripts": {
