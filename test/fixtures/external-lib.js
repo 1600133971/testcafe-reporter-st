@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 
 export default function runFixture(name, url) {
   fixture(name)
-      .page(url);
+    .page(url);
 
   test(`${url} test`, async t => {
     await t
