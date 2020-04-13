@@ -165,7 +165,7 @@ class ExtendCmd extends TestCafeCmd {
   }
 
   async test2(timeout = 1000) {
-    await this.test2(timeout);
+    await this.test1(timeout);
   }
 
   async foo () {
