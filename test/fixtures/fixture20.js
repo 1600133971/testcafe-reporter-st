@@ -1,6 +1,5 @@
 import { Selector } from 'testcafe';
-
-import { f } from '../chain';
+import { f } from '../extend-cmd';
 
 fixture`Getting test`
   .page`http://localhost:8085/testcafe/example/index.html`;

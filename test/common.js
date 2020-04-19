@@ -1,4 +1,4 @@
-import { Selector, t, ClientFunction } from 'testcafe';
+import { Selector, t } from 'testcafe';
 
 export let f = {
   getSelector: function(selector) {
@@ -98,25 +98,5 @@ export let f = {
         .click(sl)
         .click(sl.find("option").withExactText(exactText).nth(0));
     }
-  },
-
-  // usage: let value = await f.getLocalStorageValueByKey("mykey");
-  getLocalStorageValueByKey: ClientFunction((key) => {
-    return new Promise((resolve) => {
-      let result = localStorage.getItem(key);
-      resolve(result);
-    });
-  }),
-
-  // usage: await f.setLocalStorage("mykey", "myValue");
-  setLocalStorage: ClientFunction((key, value) => {
-    return new Promise((resolve, reject) => {
-      try {
-        localStorage.setItem(key, value);
-        resolve();
-      } catch (error) {
-        reject(error);
-      }
-    });
-  }),
+  }
 };
