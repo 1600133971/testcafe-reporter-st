@@ -1,0 +1,103 @@
+{
+    "fixtures": [
+        {
+            "name": "New Fixture",
+            "pageUrl": "http://localhost:8085/testcafe/example/index.html",
+            "tests": [
+                {
+                    "name": "New Test",
+                    "commands": [
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#developer-name')"
+                            },
+                            "text": "songtao",
+                            "options": {},
+                            "type": "type-text",
+                            "callsite": "26"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#remote-testing')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "27"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#windows')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "28"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#preferred-interface')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "29"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#preferred-interface').find('option').withText('JavaScript API')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "30"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#tried-test-cafe')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "31"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#slider').find('.ui-slider-handle.ui-corner-all.ui-state-default')"
+                            },
+                            "dragOffsetX": 90,
+                            "dragOffsetY": 1,
+                            "options": {
+                                "offsetX": 15,
+                                "offsetY": 9
+                            },
+                            "type": "drag",
+                            "callsite": "32"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#comments')"
+                            },
+                            "text": "ok",
+                            "options": {},
+                            "type": "type-text",
+                            "callsite": "33"
+                        },
+                        {
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#submit-button')"
+                            },
+                            "options": {},
+                            "type": "click",
+                            "callsite": "34"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
