@@ -1,0 +1,648 @@
+{
+    "fixtures": [
+        {
+            "name": "New Fixture",
+            "pageUrl": "http://localhost:8085/testcafe/example/index.html",
+            "tests": [
+                {
+                    "name": "New Test",
+                    "commands": [
+                        {
+                            "callsite": "26",
+                            "options": {
+                                "speed": 0.1,
+                                "replace": true
+                            },
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#developer-name')"
+                            },
+                            "studio": {
+                                "offsetX": 96,
+                                "offsetY": 9,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#developer-name')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('[name=\"name\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').find('div').find('fieldset').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-1').find('[name=\"name\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-1').find('fieldset').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"name\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').find('div').find('fieldset').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "text": "songtao",
+                            "type": "type-text"
+                        },
+                        {
+                            "callsite": "27",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#remote-testing')"
+                            },
+                            "studio": {
+                                "offsetX": 6,
+                                "offsetY": 7,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#remote-testing')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('[name=\"remote\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').find('div').find('fieldset').nth(1).find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-1').find('[name=\"remote\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-1').find('fieldset').nth(1).find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"remote\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').find('div').find('fieldset').nth(1).find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        },
+                        {
+                            "callsite": "28",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#windows')"
+                            },
+                            "studio": {
+                                "offsetX": 11,
+                                "offsetY": 5,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#windows')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('[name=\"os\"]').nth(0)"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').find('div').nth(1).find('fieldset').find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('[name=\"os\"]').nth(0)"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('fieldset').find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"os\"]').nth(0)"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').find('div').nth(1).find('fieldset').find('p').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        },
+                        {
+                            "callsite": "29",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#preferred-interface')"
+                            },
+                            "studio": {
+                                "offsetX": 18,
+                                "offsetY": 9,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#preferred-interface')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('[name=\"preferred-interface\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').find('div').nth(1).find('fieldset').nth(1).find('select')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('[name=\"preferred-interface\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('fieldset').nth(1).find('select')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"preferred-interface\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').find('div').nth(1).find('fieldset').nth(1).find('select')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        },
+                        {
+                            "callsite": "30",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#preferred-interface').find('option').withText('JavaScript API')"
+                            },
+                            "studio": {
+                                "offsetX": null,
+                                "offsetY": null,
+                                "selectors": [
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#preferred-interface').find('option').withText('JavaScript API')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#preferred-interface').find('option').nth(1)"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('option').withText('JavaScript API')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('option').withText('JavaScript API')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.column.col-2').find('fieldset').nth(1).find('select').find('option').nth(1)"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "$attr$",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"preferred-interface\"]').find('option').withText('JavaScript API')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "$attr$",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"preferred-interface\"]').find('option').nth(1)"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').find('div').nth(1).find('fieldset').nth(1).find('select').find('option').nth(1)"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        },
+                        {
+                            "callsite": "31",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#tried-test-cafe')"
+                            },
+                            "studio": {
+                                "offsetX": 5,
+                                "offsetY": 6,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tried-test-cafe')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tried-section').find('[name=\"tried-test-cafe\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#tried-section').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('[name=\"tried-test-cafe\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('fieldset').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"tried-test-cafe\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').nth(3).find('fieldset').find('label').find('input')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        },
+                        {
+                            "callsite": "32",
+                            "dragOffsetX": 90,
+                            "dragOffsetY": 1,
+                            "options": {
+                                "offsetX": 15,
+                                "offsetY": 9
+                            },
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#slider').find('.ui-slider-handle.ui-corner-all.ui-state-default')"
+                            },
+                            "studio": {
+                                "offsetX": 15,
+                                "offsetY": 9,
+                                "selectors": [
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#slider').find('.ui-slider-handle.ui-corner-all.ui-state-default')"
+                                        },
+                                        "ruleType": "class"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#slider').find('span')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.ui-slider-handle.ui-corner-all.ui-state-default')"
+                                        },
+                                        "ruleType": "class"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"ui-slider ui-corner-all ui-slider-horizontal ui-wi\"]').find('.ui-slider-handle.ui-corner-all.ui-state-default')"
+                                        },
+                                        "ruleType": "class"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[class^=\"ui-slider ui-corner-all ui-slider-horizontal ui-wi\"]').find('span')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').nth(3).find('fieldset').nth(1).find('div').find('div').find('span')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": true
+                            },
+                            "type": "drag"
+                        },
+                        {
+                            "callsite": "33",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#comments')"
+                            },
+                            "studio": {
+                                "offsetX": 103,
+                                "offsetY": 32,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#comments')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('[name=\"comments\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').nth(3).find('fieldset').nth(2).find('textarea')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('[name=\"comments\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('fieldset').nth(2).find('textarea')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('[name=\"comments\"]')"
+                                        },
+                                        "ruleType": "$attr$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').nth(3).find('fieldset').nth(2).find('textarea')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "text": "ok",
+                            "type": "type-text"
+                        },
+                        {
+                            "callsite": "34",
+                            "options": {},
+                            "selector": {
+                                "type": "js-expr",
+                                "value": "Selector('#submit-button')"
+                            },
+                            "studio": {
+                                "offsetX": 48,
+                                "offsetY": 15,
+                                "selectors": [
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#submit-button')"
+                                        },
+                                        "ruleType": "id"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('button').withText('Submit')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "id",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('#main-form').find('div').find('div').nth(3).find('button')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('button').withText('Submit')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('button').withText('Submit')"
+                                        },
+                                        "ruleType": "$text$"
+                                    },
+                                    {
+                                        "ancestorRuleType": "class",
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('.form-bottom').find('button')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    },
+                                    {
+                                        "rawSelector": {
+                                            "type": "js-expr",
+                                            "value": "Selector('body').find('form').find('div').find('div').nth(3).find('button')"
+                                        },
+                                        "ruleType": "$dom$"
+                                    }
+                                ],
+                                "useOffsets": false
+                            },
+                            "type": "click"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
